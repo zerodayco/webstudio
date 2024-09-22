@@ -8,6 +8,10 @@
   <title>images test page</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <style>
+    section {
+      margin-top: 20px;
+    }
+
     .icon {
       display: inline-block;
       width: 24px;
@@ -141,6 +145,39 @@
                 /img/about-me/about-me-mobile@2x.webp 2x
                 " src="/img/about-me/about-me-mobile-min.png" loading="lazy" alt="portrait" />
 
+  </section>
+  <section>
+    <h2>Projects images</h2>
+
+    <picture>
+      <source srcset="/img/projects/project-1-desktop.webp 1x, /img/projects/project-1-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-1-tablet.webp 1x, /img/projects/project-1-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-1-mobile.webp 1x, /img/projects/project-1-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-1-desktop-min.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/img/projects/project-2-desktop.webp 1x, /img/projects/project-2-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-2-tablet.webp 1x, /img/projects/project-2-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-2-mobile.webp 1x, /img/projects/project-2-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-2-desktop-min.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/img/projects/project-3-desktop.webp 1x, /img/projects/project-3-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-3-tablet.webp 1x, /img/projects/project-3-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-3-mobile.webp 1x, /img/projects/project-3-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-3-desktop-min.png" alt="project picture" />
+    </picture>
   </section>
   <section>
     <h2>Covers section images</h2>
