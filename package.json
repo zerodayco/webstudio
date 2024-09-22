@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/webstudio/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-sprite": "svg-sprite -s --symbol-dest src/img --symbol-sprite sprite.svg src/img/svg/*.svg"
   },
   "devDependencies": {
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
+    "svg-sprite": "^2.0.4",
     "vite": "^5.4.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",

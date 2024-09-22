@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>images test page</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <style>
+    section {
+      margin-top: 20px;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      stroke: blue;
+      fill: transparent;
+    }
+
+    .icon-red {
+      fill: #3B3B3B;
+      stroke: red;
+    }
+
+    .icon-hourglass {
+      font-size: 24px;
+      fill: red;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h2>svg sprite</h2>
+    <ul>
+      <li>icon-menu ---
+        <svg class="icon icon-red">
+          <use xlink:href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </li>
+
+      <li>icon-close ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </li>
+
+      <li>icon-hourglass ---
+        <svg class="icon icon-hourglass">
+          <use href="./img/sprite.svg#icon-hourglass"></use>
+        </svg>
+      </li>
+
+      <li>icon-brush ---
+        <svg class="icon icon-red">
+          <use href="./img/sprite.svg#icon-brush"></use>
+        </svg>
+      </li>
+
+      <li>icon-chat ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-chat"></use>
+        </svg>
+      </li>
+
+      <li>icon-user ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-user"></use>
+        </svg>
+      </li>
+
+      <li>icon-right ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-right"></use>
+        </svg>
+      </li>
+
+      <li>icon-left ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-left"></use>
+        </svg>
+      </li>
+
+      <li>icon-up ---
+        <svg class="icon">
+          <use href="./img/sprite.svg#icon-up"></use>
+        </svg>
+      </li>
+
+      <li>icon-down ---
+        <svg class="icon icon-red">
+          <use href="./img/sprite.svg#icon-down"></use>
+        </svg>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Header images</h2>
+    <img srcset="
+                /img/header/logo.webp   1x,
+                /img/header/logo@2x.webp 2x
+                " src="/img/header/logo-min.png" loading="lazy" alt="logo image" />
+
+    <img srcset="
+                /img/header/menu.webp   1x,
+                /img/header/menu@2x.webp 2x
+                " src="/img/header/menu-min.png" loading="lazy" alt="menu background image" />
+
+  </section>
+  <section>
+    <h2>Hero images</h2>
+    <img srcset="
+                /img/hero/hero-desktop.webp   1x,
+                /img/hero/hero-desktop@2x.webp 2x
+                " src="/img/hero/hero-desktop-min.png" loading="lazy" alt="hero background image" />
+
+    <img srcset="
+                /img/hero/hero-tablet.webp   1x,
+                /img/hero/hero-tablet@2x.webp 2x
+                " src="/img/hero/hero-tablet-min.png" loading="lazy" alt="hero background image" />
+
+    <img srcset="
+                /img/hero/hero-mobile.webp   1x,
+                /img/hero/hero-mobile@2x.webp 2x
+                " src="/img/hero/hero-mobile-min.png" loading="lazy" alt="hero background image" />
+
+  </section>
+  <section>
+    <h2>About me</h2>
+    <img srcset="
+                /img/about-me/about-me-desktop.webp   1x,
+                /img/about-me/about-me-desktop@2x.webp 2x
+                " src="/img/about-me/about-me-desktop-min.png" loading="lazy" alt="portrait" />
+
+    <img srcset="
+                /img/about-me/about-me-tablet.webp   1x,
+                /img/about-me/about-me-tablet@2x.webp 2x
+                " src="/img/about-me/about-me-tablet-min.png" loading="lazy" alt="portrait" />
+
+    <img srcset="
+                /img/about-me/about-me-mobile.webp   1x,
+                /img/about-me/about-me-mobile@2x.webp 2x
+                " src="/img/about-me/about-me-mobile-min.png" loading="lazy" alt="portrait" />
+
+  </section>
+  <section>
+    <h2>Projects images</h2>
+
+    <picture>
+      <source srcset="/img/projects/project-1-desktop.webp 1x, /img/projects/project-1-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-1-tablet.webp 1x, /img/projects/project-1-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-1-mobile.webp 1x, /img/projects/project-1-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-1-desktop-min.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/img/projects/project-2-desktop.webp 1x, /img/projects/project-2-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-2-tablet.webp 1x, /img/projects/project-2-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-2-mobile.webp 1x, /img/projects/project-2-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-2-desktop-min.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/img/projects/project-3-desktop.webp 1x, /img/projects/project-3-desktop@2x.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/img/projects/project-3-tablet.webp 1x, /img/projects/project-3-tablet@2x.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/img/projects/project-3-mobile.webp 1x, /img/projects/project-3-mobile@2x.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/img/projects/project-3-desktop-min.png" alt="project picture" />
+    </picture>
+  </section>
+  <section>
+    <h2>Covers section images</h2>
+
+    <img srcset="
+                /img/covers/project-1.webp   1x,
+                /img/covers/project-1@2x.webp 2x
+                " src="/img/covers/project-1-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                /img/covers/project-2.webp   1x,
+                /img/covers/project-2@2x.webp 2x
+                " src="/img/covers/project-2-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                /img/covers/project-3.webp   1x,
+                /img/covers/project-3@2x.webp 2x
+                " src="/img/covers/project-3-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-4.webp   1x,
+                    /img/covers/project-4@2x.webp 2x
+                    " src="/img/covers/project-4-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-5.webp   1x,
+                    /img/covers/project-5@2x.webp 2x
+                    " src="/img/covers/project-5-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-6.webp   1x,
+                    /img/covers/project-6@2x.webp 2x
+                    " src="/img/covers/project-6-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-7.webp   1x,
+                    /img/covers/project-7@2x.webp 2x
+                    " src="/img/covers/project-7-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-8.webp   1x,
+                    /img/covers/project-8@2x.webp 2x
+                    " src="/img/covers/project-8-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                    /img/covers/project-9.webp   1x,
+                    /img/covers/project-9@2x.webp 2x
+                    " src="/img/covers/project-9-min.png" loading="lazy" alt="site project image" />
+
+    <img srcset="
+                /img/covers/project-10.webp   1x,
+                /img/covers/project-10@2x.webp 2x
+                " src="/img/covers/project-10-min.png" loading="lazy" alt="site project image" />
+
+
+  </section>
+</body>
+
+</html>
