@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>images test page</title>
   <style>
+    section {
+      margin-top: 20px;
+    }
+
     .icon {
       display: inline-block;
       width: 24px;
@@ -92,6 +96,64 @@
         </svg>
       </li>
     </ul>
+  </section>
+  <section>
+    <h2>Header images</h2>
+    <img srcset="data:image/webp;base64,UklGRvQDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSLUAAAABgFXbdtzmQhCEB0VMJAYyE5uBw8BlYAgPwoUgCJ7n+9+ImACcttKzTi+vPhTDzXmcPuvpjsjp00xXQjt9vg2nzCeBtBPGSSLtIHAS6WGvnWS2O3kSGjdUQgB5kpoA1zLCJrHWqGkGNb2rYVVTp38vVzWVavyn5q9R05gaw6jFgawlAaASAkBUkjbodHTYDa6CYQ9GDTQcGxW44WzovtcFXMz8FiNuzP6dMeFmK4PXt1X2xXAaAFZQOCAYAwAA0A8AnQEqUABQAD6RQJpKJaOiIaZzPGCwEgljAM4d01J5a7HHaszu37IrgzmZrEGvS3l43DZPA/km6jNkfTZU7g7Sfr8PnbPJv3o4Z1YUGSOyHXSbumb0sx6Mw/d+/cXof/dsoo1GZZfbLNBwYvRtj5myJqz2mop5dsEnS9QOq6yyI7yRisgAAP75X2ljUwxuHYJytJG7r3cWR6rTVvPPH50H4+2BlHKngSs3FPeC45Ls+BNqKAeYNDsVKuWEreuqH1dXcBGfWpTCumKnE7Q48yHMkOs66H40rHHKmpQ6/F16dAKzwnWebNi+oi8Ejd2HglAlpZeDxssmDGN8csEF6vl6G2JZzelHAuOWBswn5sF00v8kaA0WM5eLZ/vuaeTY7azw2heVF1VvyeTtQfE4Wksk4QEjOA6tvtxvq1wRW6rp8JW94dXWH/jREcsxvkg2tpfDZO5I6was44y3kQmokpie7apPfnA6M9JGHmVKnHTeJ+VRRhL51cC/g1xhTP4nMnGgcvQwZgmFxJnJ2um1cwYdmOQXn0tL8c7tbCguK98UqHBzDWSm7qB+4dnJf1h/EI1otRfvnqxnU6NjylGpMNz8+kDnwfr8GELFACU1+DOQVI74qiwJXUROrvBtFpQsUst9xz+i3bVgrTC5nGJzXyEeUUHuB3sNZReSZmf8QwBsBBenZ+z7m/RiypWWoQHICKG7d9Q9pUekR1YdbYzjNUDw7hsoqEIpWxaBibPfb4jS5/ryBnFPr0tvQnNebEQG7GjLzyNzHu30kkYaxabqZf8P8tpKb+6jFBufkhqECjYsdloyGXuhgvflpIESOLVaz8Kz5eiA82hMeOqLKb+yHz6Ch+F8xCLjz2V07g0R3a4mcTYQxljl8jFlL3aoeQlYDq8Ro16vaRceyCC4vsGPuL+JTCRcMIiv+ea6jUd5DjAs+mwi6j5AdeW6k+nUlXmrUp06+tRn198SVkfmC1+tojPvKChmr8eIrhkdTiYKPJs1HRZApCHDI8j0cz07ni943d6xuhCQJ0uAvvD+FpIASmJZ/SfXAAAA 1x, data:image/webp;base64,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 2x" src="/webstudio/assets/logo-min-YalMy8Hp.png" loading="lazy" alt="logo image" />
+
+    <img srcset="/webstudio/assets/menu-CQHKUsg3.webp 1x, /webstudio/assets/menu@2x-_3e9BYPM.webp 2x" src="/webstudio/assets/menu-min-BKtrwdGt.png" loading="lazy" alt="menu background image" />
+
+  </section>
+  <section>
+    <h2>Hero images</h2>
+    <img srcset="/webstudio/assets/hero-desktop-DIKyY5K4.webp 1x, /webstudio/assets/hero-desktop@2x-TP1EFBVY.webp 2x" src="/webstudio/assets/hero-desktop-min-ht224ug1.png" loading="lazy" alt="hero background image" />
+
+    <img srcset="/webstudio/assets/hero-tablet-B9fiwoDs.webp 1x, /webstudio/assets/hero-tablet@2x-CFe7Xfpi.webp 2x" src="/webstudio/assets/hero-tablet-min-CB3QWRSN.png" loading="lazy" alt="hero background image" />
+
+    <img srcset="/webstudio/assets/hero-mobile-D5okjvsP.webp 1x, /webstudio/assets/hero-mobile@2x-DVic87TI.webp 2x" src="/webstudio/assets/hero-mobile-min-CSOhJqJL.png" loading="lazy" alt="hero background image" />
+
+  </section>
+  <section>
+    <h2>About me</h2>
+    <img srcset="/webstudio/assets/about-me-desktop-mQeu1RUD.webp 1x, /webstudio/assets/about-me-desktop@2x-B6srwfXM.webp 2x" src="/webstudio/assets/about-me-desktop-min-BIj-TKvl.png" loading="lazy" alt="portrait" />
+
+    <img srcset="/webstudio/assets/about-me-tablet-CBTX7BG6.webp 1x, /webstudio/assets/about-me-tablet@2x-arDA9-fY.webp 2x" src="/webstudio/assets/about-me-tablet-min-CE-H4hKQ.png" loading="lazy" alt="portrait" />
+
+    <img srcset="/webstudio/assets/about-me-mobile-C4cpXeJr.webp 1x, /webstudio/assets/about-me-mobile@2x-Bh94jauR.webp 2x" src="/webstudio/assets/about-me-mobile-min-B3BLzltr.png" loading="lazy" alt="portrait" />
+
+  </section>
+  <section>
+    <h2>Projects images</h2>
+
+    <picture>
+      <source srcset="/webstudio/assets/project-1-tablet-BtENjjM0.webp 1x, /webstudio/assets/project-1-tablet@2x-C-b_e0Ar.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/webstudio/assets/project-1-tablet-BtENjjM0.webp 1x, /webstudio/assets/project-1-tablet@2x-C-b_e0Ar.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/webstudio/assets/project-1-mobile-cUt37ZPP.webp 1x, /webstudio/assets/project-1-mobile@2x-DO-8Ccdm.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/webstudio/assets/project-1-desktop-min-DVOQxptW.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/webstudio/assets/project-2-tablet-BoKdsqCT.webp 1x, /webstudio/assets/project-2-tablet@2x-DDP8EIvG.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/webstudio/assets/project-2-tablet-BoKdsqCT.webp 1x, /webstudio/assets/project-2-tablet@2x-DDP8EIvG.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="/webstudio/assets/project-2-mobile-B6dxG0oC.webp 1x, /webstudio/assets/project-2-mobile@2x-N4NUqXIx.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/webstudio/assets/project-2-desktop-min-ZwMMkKKK.png" alt="project picture" />
+    </picture>
+
+    <picture>
+      <source srcset="/webstudio/assets/project-3-tablet-CubxDnsV.webp 1x, /webstudio/assets/project-3-tablet@2x-Cs5Vdq_G.webp 2x"
+        media="(min-width: 1440px)" />
+      <source srcset="/webstudio/assets/project-3-tablet-CubxDnsV.webp 1x, /webstudio/assets/project-3-tablet@2x-Cs5Vdq_G.webp 2x"
+        media="(min-width: 768px)" />
+      <source srcset="data:image/webp;base64,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 1x, /webstudio/assets/project-3-mobile@2x-eD_KEQFy.webp 2x"
+        media="(max-width: 767px)" />
+      <img src="/webstudio/assets/project-3-desktop-min-DmUwt5dm.png" alt="project picture" />
+    </picture>
   </section>
   <section>
     <h2>Covers section images</h2>
