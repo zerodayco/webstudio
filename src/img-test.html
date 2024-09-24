@@ -29,11 +29,58 @@
       font-size: 24px;
       fill: red;
     }
+
+    .hero {
+      height: 812px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("img/hero/hero-mobile-min.png");
+    }
+
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-mobile-min@2x.png");
+        background-size: cover;
+      }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      .hero {
+        height: 1024px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet-min.png");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet-min@2x.png");
+        }
+      }
+    }
+
+
+    @media only screen and (min-width: 1440px) {
+      .hero {
+        height: 900px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-desktop-min.png");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/hero/hero-desktop-min@2x.png");
+        }
+      }
+    }
   </style>
 </head>
 
 <body>
-  <section>
+  <section class="container">
     <h2>svg sprite</h2>
     <ul>
       <li>icon-menu ---
@@ -97,38 +144,34 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="container">
     <h2>Header images</h2>
+    <h3>Logo</h3>
     <img srcset="
                 /img/header/logo.webp   1x,
                 /img/header/logo@2x.webp 2x
                 " src="/img/header/logo-min.png" loading="lazy" alt="logo image" />
-
+    <h3>mobile menu</h3>
     <img srcset="
                 /img/header/menu.webp   1x,
                 /img/header/menu@2x.webp 2x
                 " src="/img/header/menu-min.png" loading="lazy" alt="menu background image" />
 
   </section>
-  <section>
-    <h2>Hero images</h2>
-    <img srcset="
-                /img/hero/hero-desktop.webp   1x,
-                /img/hero/hero-desktop@2x.webp 2x
-                " src="/img/hero/hero-desktop-min.png" loading="lazy" alt="hero background image" />
+  <section class="hero container">
+    <h2>Hero background images</h2>
 
-    <img srcset="
-                /img/hero/hero-tablet.webp   1x,
-                /img/hero/hero-tablet@2x.webp 2x
-                " src="/img/hero/hero-tablet-min.png" loading="lazy" alt="hero background image" />
+    <!-- <img srcset="/img/hero/hero-mobile.webp 1x, /img/hero/hero-mobile@2x.webp 2x" src="/img/hero/hero-mobile-min.png"
+      loading="lazy" alt="hero background image" />
 
-    <img srcset="
-                /img/hero/hero-mobile.webp   1x,
-                /img/hero/hero-mobile@2x.webp 2x
-                " src="/img/hero/hero-mobile-min.png" loading="lazy" alt="hero background image" />
+    <img srcset="/img/hero/hero-tablet.webp  1x, /img/hero/hero-tablet@2x.webp 2x" src="/img/hero/hero-tablet-min.png"
+      loading="lazy" alt="hero background image" />
+
+    <img srcset="/img/hero/hero-desktop.webp 1x, /img/hero/hero-desktop@2x.webp 2x" src="/img/hero/hero-desktop-min.png"
+      loading="lazy" alt="hero background image" /> -->
 
   </section>
-  <section>
+  <section class="container">
     <h2>About me</h2>
     <img srcset="
                 /img/about-me/about-me-desktop.webp   1x,
@@ -146,7 +189,7 @@
                 " src="/img/about-me/about-me-mobile-min.png" loading="lazy" alt="portrait" />
 
   </section>
-  <section>
+  <section class="container">
     <h2>Projects images</h2>
 
     <picture>
@@ -179,7 +222,7 @@
       <img src="/img/projects/project-3-desktop-min.png" alt="project picture" />
     </picture>
   </section>
-  <section>
+  <section class="container">
     <h2>Covers section images</h2>
 
     <img srcset="
