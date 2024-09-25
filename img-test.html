@@ -28,12 +28,59 @@
       font-size: 24px;
       fill: red;
     }
+
+    .hero {
+      height: 812px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-mobile-min-CSOhJqJL.png");
+    }
+
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-mobile-min@2x-DYo0kD6p.png");
+        background-size: cover;
+      }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      .hero {
+        height: 1024px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-tablet-min-CB3QWRSN.png");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-tablet-min@2x-Bep0I_IF.png");
+        }
+      }
+    }
+
+
+    @media only screen and (min-width: 1440px) {
+      .hero {
+        height: 900px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-desktop-min-ht224ug1.png");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("/webstudio/assets/hero-desktop-min@2x-CGw6TnJE.png");
+        }
+      }
+    }
   </style>
-  <link rel="stylesheet" crossorigin href="/webstudio/assets/styles-BgZkvdk6.css">
+  <link rel="stylesheet" crossorigin href="/webstudio/assets/styles-D70VGRlt.css">
 </head>
 
 <body>
-  <section>
+  <section class="container">
     <h2>svg sprite</h2>
     <ul>
       <li>icon-menu ---
@@ -97,23 +144,28 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="container">
     <h2>Header images</h2>
+    <h3>Logo</h3>
     <img srcset="data:image/webp;base64,UklGRvQDAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSLUAAAABgFXbdtzmQhCEB0VMJAYyE5uBw8BlYAgPwoUgCJ7n+9+ImACcttKzTi+vPhTDzXmcPuvpjsjp00xXQjt9vg2nzCeBtBPGSSLtIHAS6WGvnWS2O3kSGjdUQgB5kpoA1zLCJrHWqGkGNb2rYVVTp38vVzWVavyn5q9R05gaw6jFgawlAaASAkBUkjbodHTYDa6CYQ9GDTQcGxW44WzovtcFXMz8FiNuzP6dMeFmK4PXt1X2xXAaAFZQOCAYAwAA0A8AnQEqUABQAD6RQJpKJaOiIaZzPGCwEgljAM4d01J5a7HHaszu37IrgzmZrEGvS3l43DZPA/km6jNkfTZU7g7Sfr8PnbPJv3o4Z1YUGSOyHXSbumb0sx6Mw/d+/cXof/dsoo1GZZfbLNBwYvRtj5myJqz2mop5dsEnS9QOq6yyI7yRisgAAP75X2ljUwxuHYJytJG7r3cWR6rTVvPPH50H4+2BlHKngSs3FPeC45Ls+BNqKAeYNDsVKuWEreuqH1dXcBGfWpTCumKnE7Q48yHMkOs66H40rHHKmpQ6/F16dAKzwnWebNi+oi8Ejd2HglAlpZeDxssmDGN8csEF6vl6G2JZzelHAuOWBswn5sF00v8kaA0WM5eLZ/vuaeTY7azw2heVF1VvyeTtQfE4Wksk4QEjOA6tvtxvq1wRW6rp8JW94dXWH/jREcsxvkg2tpfDZO5I6was44y3kQmokpie7apPfnA6M9JGHmVKnHTeJ+VRRhL51cC/g1xhTP4nMnGgcvQwZgmFxJnJ2um1cwYdmOQXn0tL8c7tbCguK98UqHBzDWSm7qB+4dnJf1h/EI1otRfvnqxnU6NjylGpMNz8+kDnwfr8GELFACU1+DOQVI74qiwJXUROrvBtFpQsUst9xz+i3bVgrTC5nGJzXyEeUUHuB3sNZReSZmf8QwBsBBenZ+z7m/RiypWWoQHICKG7d9Q9pUekR1YdbYzjNUDw7hsoqEIpWxaBibPfb4jS5/ryBnFPr0tvQnNebEQG7GjLzyNzHu30kkYaxabqZf8P8tpKb+6jFBufkhqECjYsdloyGXuhgvflpIESOLVaz8Kz5eiA82hMeOqLKb+yHz6Ch+F8xCLjz2V07g0R3a4mcTYQxljl8jFlL3aoeQlYDq8Ro16vaRceyCC4vsGPuL+JTCRcMIiv+ea6jUd5DjAs+mwi6j5AdeW6k+nUlXmrUp06+tRn198SVkfmC1+tojPvKChmr8eIrhkdTiYKPJs1HRZApCHDI8j0cz07ni943d6xuhCQJ0uAvvD+FpIASmJZ/SfXAAAA 1x, data:image/webp;base64,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 2x" src="/webstudio/assets/logo-min-YalMy8Hp.png" loading="lazy" alt="logo image" />
-
+    <h3>mobile menu</h3>
     <img srcset="/webstudio/assets/menu-CQHKUsg3.webp 1x, /webstudio/assets/menu@2x-_3e9BYPM.webp 2x" src="/webstudio/assets/menu-min-BKtrwdGt.png" loading="lazy" alt="menu background image" />
 
   </section>
-  <section>
-    <h2>Hero images</h2>
-    <img srcset="/webstudio/assets/hero-desktop-DIKyY5K4.webp 1x, /webstudio/assets/hero-desktop@2x-TP1EFBVY.webp 2x" src="/webstudio/assets/hero-desktop-min-ht224ug1.png" loading="lazy" alt="hero background image" />
+  <section class="hero container">
+    <h2>Hero background images</h2>
 
-    <img srcset="/webstudio/assets/hero-tablet-B9fiwoDs.webp 1x, /webstudio/assets/hero-tablet@2x-CFe7Xfpi.webp 2x" src="/webstudio/assets/hero-tablet-min-CB3QWRSN.png" loading="lazy" alt="hero background image" />
+    <!-- <img srcset="/img/hero/hero-mobile.webp 1x, /img/hero/hero-mobile@2x.webp 2x" src="/img/hero/hero-mobile-min.png"
+      loading="lazy" alt="hero background image" />
 
-    <img srcset="/webstudio/assets/hero-mobile-D5okjvsP.webp 1x, /webstudio/assets/hero-mobile@2x-DVic87TI.webp 2x" src="/webstudio/assets/hero-mobile-min-CSOhJqJL.png" loading="lazy" alt="hero background image" />
+    <img srcset="/img/hero/hero-tablet.webp  1x, /img/hero/hero-tablet@2x.webp 2x" src="/img/hero/hero-tablet-min.png"
+      loading="lazy" alt="hero background image" />
+
+    <img srcset="/img/hero/hero-desktop.webp 1x, /img/hero/hero-desktop@2x.webp 2x" src="/img/hero/hero-desktop-min.png"
+      loading="lazy" alt="hero background image" /> -->
 
   </section>
-  <section>
+  <section class="container">
     <h2>About me</h2>
     <img srcset="/webstudio/assets/about-me-desktop-mQeu1RUD.webp 1x, /webstudio/assets/about-me-desktop@2x-B6srwfXM.webp 2x" src="/webstudio/assets/about-me-desktop-min-BIj-TKvl.png" loading="lazy" alt="portrait" />
 
@@ -122,7 +174,7 @@
     <img srcset="/webstudio/assets/about-me-mobile-C4cpXeJr.webp 1x, /webstudio/assets/about-me-mobile@2x-Bh94jauR.webp 2x" src="/webstudio/assets/about-me-mobile-min-B3BLzltr.png" loading="lazy" alt="portrait" />
 
   </section>
-  <section>
+  <section class="container">
     <h2>Projects images</h2>
 
     <picture>
@@ -155,7 +207,7 @@
       <img src="/webstudio/assets/project-3-desktop-min-DmUwt5dm.png" alt="project picture" />
     </picture>
   </section>
-  <section>
+  <section class="container">
     <h2>Covers section images</h2>
 
     <img srcset="/webstudio/assets/project-1-CiLJ8H7H.webp 1x, /webstudio/assets/project-1@2x-DJMUxFij.webp 2x" src="/webstudio/assets/project-1-min-1YvXIEVM.png" loading="lazy" alt="site project image" />
