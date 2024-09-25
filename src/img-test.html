@@ -30,12 +30,13 @@
       fill: red;
     }
 
-    .hero {
+    /* --- hero png background */
+    /* .hero {
       height: 812px;
       background-repeat: no-repeat;
       background-image: linear-gradient(rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)), url("img/hero/hero-mobile-min.png");
-    }
+    } 
 
     @media (min-resolution: 192dpi) {
       .hero {
@@ -73,6 +74,105 @@
         .hero {
           background-image: linear-gradient(rgba(46, 47, 66, 0.2),
               rgba(46, 47, 66, 0.2)), url("img/hero/hero-desktop-min@2x.png");
+        }
+      }
+    } */
+
+    /* --- hero webp background */
+    .hero {
+      height: 812px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("img/hero/hero-mobile.webp");
+    }
+
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-mobile@2x.webp");
+        background-size: cover;
+      }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      .hero {
+        height: 1024px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet.webp");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet@2x.webp");
+        }
+      }
+    }
+
+
+    @media only screen and (min-width: 1440px) {
+      .hero {
+        height: 900px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-desktop.webp");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/hero/hero-desktop@2x.webp");
+        }
+      }
+    }
+
+    /* cover background */
+    /* https://imagekit.io/blog/scale-crop-images-css/ */
+    .cover-bkg {
+      height: 508px;
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      /* background-position: center; */
+      background-size: cover;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop.webp");
+    }
+
+    @media (min-resolution: 192dpi) {
+      .cover-bkg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop@2x.webp");
+        background-size: cover;
+      }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      .cover-bkg {
+        height: 960px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop.webp");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .cover-bkg {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop@2x.webp");
+        }
+      }
+    }
+
+
+    @media only screen and (min-width: 1440px) {
+      .cover-bkg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop.webp");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .cover-bkg {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop@2x.webp");
         }
       }
     }
@@ -161,14 +261,7 @@
   <section class="hero container">
     <h2>Hero background images</h2>
 
-    <!-- <img srcset="/img/hero/hero-mobile.webp 1x, /img/hero/hero-mobile@2x.webp 2x" src="/img/hero/hero-mobile-min.png"
-      loading="lazy" alt="hero background image" />
-
-    <img srcset="/img/hero/hero-tablet.webp  1x, /img/hero/hero-tablet@2x.webp 2x" src="/img/hero/hero-tablet-min.png"
-      loading="lazy" alt="hero background image" />
-
-    <img srcset="/img/hero/hero-desktop.webp 1x, /img/hero/hero-desktop@2x.webp 2x" src="/img/hero/hero-desktop-min.png"
-      loading="lazy" alt="hero background image" /> -->
+    <!-- see styles -->
 
   </section>
   <section class="container">
@@ -274,8 +367,9 @@
                 /img/covers/project-10.webp   1x,
                 /img/covers/project-10@2x.webp 2x
                 " src="/img/covers/project-10-min.png" loading="lazy" alt="site project image" />
-
-
+  </section>
+  <section class="cover-bkg container">
+    <h2>cover backgrounds</h2>
   </section>
 </body>
 
