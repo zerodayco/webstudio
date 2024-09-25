@@ -35,14 +35,26 @@ body {
 }
 
 /* mobile */
-.container {}
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-  .container {}
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 }
 
 /* desktop */
 @media only screen and (min-width: 1440px) {
-  .container {}
+  .container {
+    min-width: 1440px;
+  }
 }
