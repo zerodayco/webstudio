@@ -135,7 +135,18 @@
       background-size: cover;
       background-image: linear-gradient(rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)), url("/webstudio/assets/background-desktop-DQF1ydm9.webp");
+
+      /* background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("img/covers/background-desktop-min.png"); */
+
+      /* background-position: right -90px bottom 0px; */
+      background-size: 770px auto;
+      background-position: 75% 45%;
+      overflow: hidden;
     }
+
+    /* https://www.sitepoint.com/how-to-use-css-background-size-and-background-position/ */
+    /* https://cloudinary.com/guides/front-end-development/6-ways-to-stretch-a-background-image-with-css */
 
     @media (min-resolution: 192dpi) {
       .cover-bkg {
@@ -151,6 +162,8 @@
         height: 960px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.2),
             rgba(46, 47, 66, 0.2)), url("/webstudio/assets/background-desktop-DQF1ydm9.webp");
+        background-size: 1440px auto;
+        background-position: 75% 35%;
       }
 
       @media (min-resolution: 192dpi) {
