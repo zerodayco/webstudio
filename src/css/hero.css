@@ -1,0 +1,77 @@
+    .hero {
+      height: 812px;
+      padding-top: 281px;
+      padding-bottom: 32px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+          rgba(46, 47, 66, 0.2)), url("../img/hero/hero-mobile.webp");
+    }
+
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("../img/hero/hero-mobile@2x.webp");
+        background-size: cover;
+      }
+    }
+
+
+    .hero-header {
+      font-size: 50px;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 212px;
+    }
+
+    .hero-contacts-list {
+      display: flex;
+      gap: 4px;
+    }
+
+    .hero-contacts-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(250, 250, 250, 0.2);
+      border-radius: 60px;
+      transition: border 250ms linear;
+      width: 37px;
+      height: 37px;
+    }
+
+    .hero-contacts-item:hover,
+    .hero-contacts-link:focus {
+      border: 1px solid #fafafa;
+    }
+
+    .hero-contacts-link {
+      padding: 10px 12px;
+      color: #fafafa;
+    }
+
+    .hero-contacts-email {
+      padding: 10px 12px;
+      width: auto;
+    }
+
+    .hero-contacts-link-email {
+      font-size: 14px;
+      font-style: normal;
+      color: #fafafa;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .hero {
+        height: 1024px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+            rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet.webp");
+      }
+
+      @media (min-resolution: 192dpi) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.2),
+              rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet@2x.webp");
+        }
+      }
+    }
