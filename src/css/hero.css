@@ -65,13 +65,38 @@
       .hero {
         height: 1024px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.2),
-            rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet.webp");
+            rgba(46, 47, 66, 0.2)), url("../img/hero/hero-tablet.webp");
       }
 
       @media (min-resolution: 192dpi) {
         .hero {
           background-image: linear-gradient(rgba(46, 47, 66, 0.2),
-              rgba(46, 47, 66, 0.2)), url("img/hero/hero-tablet@2x.webp");
+              rgba(46, 47, 66, 0.2)), url("../img/hero/hero-tablet@2x.webp");
         }
+      }
+
+      .hero-header {
+        font-size: 90px;
+        margin-bottom: 187px;
+      }
+
+      .hero-contacts-list {
+        justify-content: flex-end;
+      }
+
+      .hero-contacts-item {
+        width: 55px;
+        height: 55px;
+      }
+
+      .hero-contacts-link {
+        font-size: 16px;
+        padding: 18px 16px;
+      }
+
+      .hero-contacts-email {
+        font-size: 16px;
+        padding: 18px 24px;
+        width: auto;
       }
     }
