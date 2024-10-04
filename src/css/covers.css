@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.covers.container {
+  padding: 0;
+}
+
 @media (min-resolution: 192dpi) {
   .covers {
     background-image: linear-gradient(rgba(46, 47, 66, 0.2),
@@ -46,5 +50,45 @@
       background-image: linear-gradient(rgba(46, 47, 66, 0.2),
           rgba(46, 47, 66, 0.2)), url("../img/covers/background-desktop@2x.webp");
     }
+  }
+}
+
+
+.marquee {
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(17deg);
+}
+
+.marquee__line {
+  background-color: #FFDC00;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 282px;
+  height: 162px;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-0%);
+  }
+
+  to {
+    transform: translateX(-180%);
   }
 }
