@@ -110,7 +110,7 @@
   }
 
   to {
-    transform: translateX(-30%);
+    transform: translateX(-270%);
   }
 }
 
@@ -150,5 +150,9 @@
 
   .js-pause-animation {
     animation-play-state: paused;
+  }
+
+  .js-run-animation {
+    animation-play-state: running;
   }
 }
