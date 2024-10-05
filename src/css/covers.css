@@ -148,5 +148,7 @@
     gap: 55px;
   }
 
-
+  .js-pause-animation {
+    animation-play-state: paused;
+  }
 }
